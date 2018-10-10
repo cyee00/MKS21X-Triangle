@@ -15,5 +15,11 @@ public class PointTriangle {
   public double getY(){
     return y;
   }
+  public double distanceTo(Point p1){
+    return Math.sqrt((Math.abs(p1.getX()-this.getX()))*(Math.abs(p1.getX()-this.getX())) + (Math.abs(p1.getY()-this.getY()))*(Math.abs(p1.getY()-this.getY())));
+  }
+  public double distanceTo(Point p1, Point p2){
+    return Math.sqrt((Math.abs(p2.getX()-p1.getX()))*(Math.abs(p2.getX()-p1.getX())) + (Math.abs(p2.getY()-p1.getY()))*(Math.abs(p2.getY()-p1.getY())));
+  }
 }
 }
