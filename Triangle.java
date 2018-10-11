@@ -25,7 +25,7 @@ public class Triangle {
       ans = new Point(p3.getX(),p3.getY());
     }
     return null;
-    }
+  }
     public void setVertex(int i, Point point){
       Point ans;
       if (i==0) {
@@ -37,7 +37,7 @@ public class Triangle {
       if (i==2) {
         p3 = new Point(point.getX(),point.getY());
       }
-  }
+   }
   public String toString(){
     return "Triangle: A"+p1.toString()+" B:"+p2.toString()+" C:"+p3.toString();
   }
