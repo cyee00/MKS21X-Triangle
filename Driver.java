@@ -40,6 +40,31 @@ public class Driver{
     public double getPerimeter(){
       return p1.distanceTo(p2) + p2.distanceTo(p3) + p3.distanceTo(p1);
     }
+    public Point getVertex(int i){
+      Point ans;
+      if (i==0) {
+        ans = new Point(p1.getX(),p1.getY());
+      }
+      if (i==1) {
+        ans = new Point (p2.getX(),p2.getY());
+      }
+      if (i==2) {
+        ans = new Point(p3.getX(),p3.getY());
+      }
+      return ans;
+      }
+      public Point setVertex(int i, Point point){
+        Point ans;
+        if (i==0) {
+          p1 = Point(point.getX(),point.getY());
+        }
+        if (i==1) {
+          p2 = Point(point.getX(),point.getY());
+        }
+        if (i==2) {
+          p3 = Point(point.getX(),point.getY());
+        }
+    }
   }
 
     public static void main(String[] args) {
