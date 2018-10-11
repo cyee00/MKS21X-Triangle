@@ -1,4 +1,4 @@
-public class Point{
+public class Point {
 private double x,y;
 public Point(double X, double Y){
   x=X;
@@ -17,7 +17,7 @@ public double getY(){
 public double distanceTo(Point p1){
   return Math.sqrt((Math.abs(p1.getX()-x))*(Math.abs(p1.getX()-x)) + (Math.abs(p1.getY()-y))*(Math.abs(p1.getY()-y)));
 }
-public double distance(Point p1, Point p2){
+public static double distance(Point p1, Point p2){
   return Math.sqrt((Math.abs(p2.getX()-p1.getX()))*(Math.abs(p2.getX()-p1.getX())) + (Math.abs(p2.getY()-p1.getY()))*(Math.abs(p2.getY()-p1.getY())));
 }
 public String toString() {
