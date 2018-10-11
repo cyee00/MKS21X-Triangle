@@ -1,4 +1,4 @@
-public class Driver {
+public class PointTriangleDriver {
     public static void main(String[] args) {
     Triangle abc = new Triangle(0, 0, 3, 0, 0, 4); // Initializes a 3-4-5 triangle
 
@@ -9,7 +9,7 @@ public class Driver {
 
     abc.setVertex(0, new Point(1, 1)); //sets point at the origin to (1,1)
 
-    System.out.println("\nVertex A moved to " + abc.getVertex(0)); //should show new value as (1,1)
+    System.out.println("\nVertex A moved to " + abc.getVertex(2)); //should show new value as (1,1)
 
     System.out.println("New Perimeter: " + abc.getPerimeter()); //should be approximately 10.39 (truncated)
   }
